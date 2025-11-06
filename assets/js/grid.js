@@ -10,7 +10,7 @@ $(document).ready(function(){
     $('#sidebar-toggle-hide').click(function(){
         // $('#sidebar').fadeToggle(300);
         $('#sidebar').fadeOut(300);
-        $('#main-body').animate({width: "100%"},300);
+        $('#main-body').animate({width: "100%", marginRight: "0rem"},300);
 
         setTimeout(function() {
             removeAllSidebarToggleClasses();
@@ -22,6 +22,7 @@ $(document).ready(function(){
     $('#sidebar-toggle-show').click(function(){
         $('#sidebar').fadeIn(300);
         // $('#main-body').animate({width:"calc(100% - 14rem)"}, 300);
+        $('#main-body').animate({ marginRight: "14rem" }, 300);
 
         setTimeout(function(){
             // removeAllSidebarToggleClasses();

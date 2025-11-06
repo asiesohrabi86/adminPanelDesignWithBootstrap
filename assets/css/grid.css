@@ -137,21 +137,26 @@
     margin-top: 3.5rem;
     z-index: 1000;
     display: flex;
+    flex-direction: row-reverse;
 }
 
 .sidebar{
     flex: 0 0 14rem;
     background-color: #404e67;
     color: #dcdcdc;
+    position: fixed;
+    top: 3.5rem;
+    right: 0;
+    z-index: 10000;
 }
 
 .sidebar-container{
    height: calc(100vh - 3.5rem);
-    position: fixed;
+    /* position: fixed; */
     width: 14rem;
-    top: 3.5rem;
+    /* top: 3.5rem;
     right: 0;
-    z-index: 10000;
+    z-index: 10000; */
     background-color: #404e67;
 }
 
